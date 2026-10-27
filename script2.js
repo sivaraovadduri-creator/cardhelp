@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var form = document.getElementById('contactForm');
+    var form = document.getElementById('regForm');
     var btn = document.getElementById('submitBtn');
     var status = document.getElementById('status');
 
