@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById('regForm');
-    var btn = document.getElementById('submitBtn');
+    var btn = document.getElementById('nextBtn');
     var status = document.getElementById('status');
 
     // Replace with the email that should receive the data
